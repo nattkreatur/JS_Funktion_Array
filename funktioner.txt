@@ -1,0 +1,20 @@
+Minimum:
+
+en funktion som tar emot två värden och svara med det minsta.
+
+Recursion:
+
+en rekursiv funktion som kollar om en ett tal är jämnt eller inte.
+0 är jämnt
+1 är ojämnt
+högre tal tar vi N-2 tills de blir 1 eller 0.
+Returnera en boolean = true eller false
+
+Bean counting:
+
+Gör först en funktion som räknar alla B i en string
+
+gör sedan en funktion som gör samma sak fast den tar in ett extra värde där man väljer vilken bokstav
+som ska räknas
+
+Sist så gör man om första funktionen så att den använder sig av den andra funktionen och räknar alla B

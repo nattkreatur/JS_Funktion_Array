@@ -1,18 +1,28 @@
+//First program. A range-function:
+
 function range(start, end){
-    firstValue = start;
-    rangeList = [];
-    rangeSize = 1 + end - start; //addera 1 för att inkludera även första och sista numret
+    let rangeList = [];
+    let rangeSize = 1 + end - start; //adds 1 to include all numbers in the range
 
     for (let i = 0; i < rangeSize; i++){
-        rangeList.unshift(firstValue);
-        firstValue++;
+        rangeList.push(start);
+        start++;
     }
-    
-    //debug-logg:
-    console.log("Returnerar antal värden i array: " + rangeSize);
-    return [rangeList];
+    return rangeList;
+}
+console.log(range(1, 10));
+console.log(range(5, 8));
+
+//Second program. A sum function:
+
+function sum(array){
+    let arraySize = array.length;
+    let valueOfArray = 0;
+    for (let i = 0; i < arraySize; i++){
+        valueOfArray += array[i]; //i goes through every index of array
+    }
+    return valueOfArray;
 }
 
-console.log(range(5, 10));
-//skapa en tom array []
-//for loopa-värdena på något vis
+console.log(sum(range(1, 10)));
+console.log(sum(range(5, 8)));

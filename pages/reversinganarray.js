@@ -8,20 +8,25 @@ function reverseArray(array){
     }
     return newArray;
 }
-
-//input enligt uppgift
 let myArray = ["A", "B", "C"];
 console.log(reverseArray(myArray));
 
-//Second program. Reverses an existing array.
 
+//Second program. Reverses an existing array.
 function reverseArrayInPlace(array){
     let arrayLength = array.length;
-    let temporary = []; //placeholder array used only to reverse order inside of function
-    for (let i = 0; i < arrayLength; i++){
-        temporary.unshift(array[i]);
+    let j = arrayLength;//for countdown
+    for (let i = 0; i < arrayLength; i++){ //for count up
+        j > 0; j--;
+        let temp = array[i];
+        let temp2 = array[j];
+        //only implement changes if upcount is smaller than downcount
+        if (i < j){
+            array[i] = temp2;
+            array[j] = temp;
+        } 
     }
-    arrayValue = temporary; //changes existing array instead of returning a new array
+    return array;
 }
 let arrayValue = [1, 2, 3, 4, 5];
 reverseArrayInPlace(arrayValue);

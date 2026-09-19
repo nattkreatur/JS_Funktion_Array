@@ -2,9 +2,9 @@
 
 function range(start, end){
     let rangeList = [];
-    let rangeSize = 1 + end - start; //adds 1 to include all numbers in the range
+    let rangeSize = end - start;
 
-    for (let i = 0; i < rangeSize; i++){
+    for (let i = 0; i <= rangeSize; i++){
         rangeList.push(start);
         start++;
     }
